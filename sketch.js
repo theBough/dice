@@ -6,11 +6,13 @@ function setup() {
   createCanvas(400, 400);
   rndNum = Math.ceil(random(6));
   rollBtn = createButton("Roll");
+  rollBtn.position(10,10)
   rollBtn.mousePressed(newRoll);
 }
 function draw() {
   background(220);
   textSize(50);
+  rect(85,55,60,60)
   text(rndNum, 100, 100);
   if (isRolling) {
     rndNum = Math.ceil(random(6));
